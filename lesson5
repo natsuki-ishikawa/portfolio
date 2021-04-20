@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+  <title>最短５日でダイバーデビュー！ - MdN DIVE</title>
+  <meta name="description" content="MdN DIVEは千代田区にあるマンツーマンダイビングスクールです。5/31までWeb限定キャンペーンを実施中！">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lesson.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/lesson.js"></script>
+</head>
+<body>
+  <header id="top">
+    <div id="hamburger_open" class="hamburger-open">
+      <img src="img/hamburger-menu.png" alt="開く">
+    </div>
+    <h1>
+      <a href="lesson.html">
+        <img src="img/kadai-logo.png" alt="MdN DIVE">
+      </a>
+    </h1>
+  </header>
+  <div id="hamburger" class="l-hamburger-wrapper">
+    <nav class="l-hamburger">
+      <ul id="list" class="global-menu-list">
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#license">ライセンス取得までの<br>流れ</a></li>
+        <li><a href="#app">お申し込み</a></li>
+        <li><a href="#company">会社情報</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger_close" class="hamburger-close">
+      <img src="img/hamburger-close.png" alt="閉じる">
+    </div>
+  </div>
+  <main>
+    <picture>
+      <source srcset="img/kadai-photo_01.jpg" media="(min-width: 481px)"/>
+      <img src="img/kadai-photo_small_01.jpg" alt="この夏最後のキャンペーン！最短5日でダイバーデビュー！">
+    </picture>
+      <section class="l-section l-detail">
+      <div class="section-inner">
+        <h2 class="section-title">Web限定キャンペーン中！</h2>
+        <p>5/31までにWebでお申し込みいただいた方限定で、特別価格を実施中です。MdN DIVEは安心のマンツーマンレッスン！お友達との参加も可能です。仲間と一緒にダイビングライセンスを取得して、世界中の海を楽しみましょう！</p>
+      </div>
+    </section>
+    <section id="license" class="l-section l-license">
+      <div class="section-inner">
+        <h2 class="section-title">ライセンス取得までの流れ</h2>
+        <ol class="license-flow">
+          <li>学科講習（5~6時間）</li>
+          <li>プール実習（1~2日）</li>
+          <li>海洋実習（2日）</li>
+          <li>筆記試験</li>
+        </ol>
+        <table class="license-fee">
+          <tr>
+            <th>料金に含まれるもの</th>
+              <td>教材費・実習費・器材レンタル代<br class="sp-only">・ライセンス申請料</td>
+          </tr>
+          <tr>
+            <th>料金に含まれないもの</th>
+            <td>
+              交通費・宿泊費<br class="sp-only">・追加ダイブ費（希望者のみ）
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="app" class="l-section l-contact">
+      <div class="section-inner">
+        <h2 class="section-title">申し込みフォーム</h2>
+        <form action="#" method="post" class="l-form">
+          <dl class="form-list">
+            <dt>
+              <label for="userName">氏名</label>
+            </dt>
+            <dd>
+              <input type="text" name="user-name" id="userName" required>
+            </dd>
+            <dt>
+              <label for="userEmail">メールアドレス</label>
+            </dt>
+            <dd>
+              <input type="email" name="user-email" id="userEmail" reqired>
+            </dd>
+            <dt>水泳経験はありますか？</dt>
+            <dd>
+              <ul class="swim-list">
+                <li>
+                  <input type="radio" name="swim" value="yes" id="swim_yes" checked>
+                  <label for="swim_yes">はい</label>
+                </li>
+                <li>
+                  <input type="radio" name="swim" value="no" id="swim_no">
+                  <label for="swim_no">いいえ</label>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="form-submit">
+            <input type="submit" value="申し込む">
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="l-bnr">
+      <img src="img/kadai-photo_02.jpg" alt="珊瑚礁と熱帯魚">
+    </div>
+  </main>
+  <nav id="pageTop" class="page-top">
+    <img src="img/up.png" alt="ページトップ">
+  </nav>
+  <footer id="company">
+    <address>
+    〒101-0051<br>
+    東京都千代田区神田神保町1丁目105<br>
+    <a href="tel:0000000000">00-0000-0000</a><br>
+    株式会社 MdN DIVE
+    </address>
+    <small>&copy; MdN Corporation.</small>
+  </footer>
+</body>
+</html>
