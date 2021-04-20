@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  font-family: "ヒラギノ角ゴ ProN","Meiryo",sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 a img {
+  height: auto;
+  width: 170px;
+}
+
+.l-section {
+  color: #fff;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.l-detail {
+  background-color: #dec200;
+}
+
+.l-license {
+  background-color: #3eb6bd;
+}
+
+.l-contact{
+  background-color: #3d5a6d;
+}
+
+.section-inner {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.section-title {
+  border-bottom: 4px solid #fff;
+  margin: 0 0 30px;
+}
+
+.license-flow {
+  margin: 0 0 20px;
+  padding: 0 0 0 30px;
+}
+
+.license-flow li:not(:last-child){
+  margin: 0 0 20px;
+}
+
+.license-fee {
+  background-color: #fff;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.license-fee th,
+.license-fee td {
+  border: 1px solid #3d5a6d;
+  color: #3d5a6d;
+  padding: 16px;
+  text-align: center;
+}
+
+.license-fee th {
+  background-color: #bfe1f6;
+}
+
+.license-fee .text-flap-pc {
+  display: block;
+}
+
+.license-fee .text-flap-sp {
+  display: none;
+}
+
+.sp-only {
+  display: none;
+}
+
+.l-form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.form-list dt::before {
+  content: "◆";
+  margin: 0 10px 0 0;
+}
+
+.form-list dd:not(:last-child) {
+  margin: 0 0 40px;
+}
+
+.form-list {
+  margin: 0 0 40px;
+}
+
+.form-list dt {
+  padding: 0 0 20px;
+}
+
+.form-list input[type='text'],
+.form-list input[type='email'] {
+  border: none;
+  font-size: 1.8rem;
+  padding: 6px;
+  width: 100%;
+}
+
+.swim-list {
+  display: flex;
+  list-style: none;
+}
+
+.swim-list li{
+  margin: 0 10px;
+}
+
+.form-submit input {
+  background: #3eb6bd;
+  color: #fff;
+  display: block;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.form-submit input:hover {
+  cursor: pointer;
+}
+
+.page-top :hover {
+  cursor: pointer;
+}
+
+.page-top {
+  bottom: 40px;
+  height: 60px;
+  position: fixed;
+  right: 40px;
+  width: 60px;
+}
+
+footer {
+  font-size: 1.4rem;
+  padding: 20px;
+  text-align: center;
+}
+
+footer,
+footer a {
+  color: #2f4858;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer address {
+  font-style: normal;
+  margin: 0 0 10px;
+}
+
+.hamburger-open {
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+}
+
+.l-hamburger-wrapper {
+  background-color: rgba(0,0,0,.5);
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.l-hamburger {
+  background-color: #888;
+  box-shadow: 6px 0 25px rgba(0,0,0,.50);
+  height: 100%;
+  width: 240px;
+}
+
+.global-menu-list {
+  border: 1px solid #777;
+}
+
+.global-menu-list li{
+  border-bottom: 1px solid #777;
+}
+
+.global-menu-list li:last-child {
+  border: none;
+}
+
+.hamburger-close {
+  left: 10px;
+  position: fixed;
+  top: 290px;
+}
+
+.global-menu-list li a{
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 18px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 481px){
+  .hamburger-open{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+  header{
+    padding-top: 10px;
+  }
+
+  body{
+    font-size: 1.4rem;
+  }
+
+  header h1 a img {
+    height: auto;
+    width: 170px;
+    margin: 10px auto 0;
+  }
+
+  .section-inner {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .l-section {
+    padding: 28px 10px 10px;
+  }
+
+  .license-fee {
+    width: 100%;
+  }
+
+  .license-fee th,
+  .license-fee td {
+    display: block;
+    width: 100%;
+  }
+
+  .license-fee th,
+  .license-fee td {
+    border-bottom: none;
+  }
+
+  .license-fee tr:last-child td {
+  border-bottom: 1px solid #3d5a6d;
+  }
+
+  .license-fee .text-flap-pc {
+    display: none;
+  }
+
+  .license-fee .text-flap-sp {
+    display: block;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  .l-form,
+  .form-list {
+    width: 100%;
+  }
+
+  .form-list tr th{
+    padding-bottom: 10px;
+  }
+
+  .form-list li{
+    margin: 0 auto;
+  }
+
+  .form-list input[type="radio"]{
+    height: 18px;
+    margin: 0 4px 0 35px;
+    width: 18px;
+  }
+
+  .form-submit input {
+    font-size: 1.6rem;
+    padding: 15px;
+    width: 55%;
+  }
+
+  .page-top {
+    bottom: 20px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
